@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitung Biaya Pengiriman</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Hitung Biaya Pengiriman</h1>
+        <form action="hitung_biaya.php" method="post" id="biayaForm">
+            <div class="form-group">
+                <label for="jarak">Jarak Pengiriman (km):</label>
+                <input type="number" class="form-control" id="jarak" name="jarak" required>
+            </div>
+            <button type="button" class="btn btn-primary btn-block" onclick="hitungBiaya()">Hitung Biaya Pengiriman</button>
+        </form>
+        <div id="hasilBiaya" class="mt-4"></div> <!-- Container untuk menampilkan hasil biaya -->
+        <br>
+        <a href="lihat_transaksi.php" class="btn btn-secondary btn-block">Lihat Transaksi</a>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
